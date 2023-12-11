@@ -13,7 +13,7 @@ body {
   .background {
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: 2rem;
     left: 0;
     right: 0;
     bottom: 0;
@@ -45,7 +45,7 @@ body {
   
   svg {
    position: absolute;
-    top: 100rem;
+    top: 0;
     left: 0;
     width: 100%;
     height: 320px;
@@ -55,16 +55,6 @@ body {
     display: block;
     pointer-events: none;
   }
-  
-  footer {
-    margin-top: 9rem;
-    left: 0;
-    bottom: 2px;
-    display: flex;
-    width: 100%;
-    height: 310px;
-  }
-  
   section {
     display: flex;
     flex-direction: column;
@@ -75,16 +65,16 @@ body {
     width: 100%;
   }
   
-  @media (width > 420px) {
-    section {
+  .social-media {
+      position: absolute;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
       align-items: center;
-      padding-left: 0;
-      gap: 20px;
-    }
-    
-    .links {
-      gap: 20px;
-    }
+      justify-content: center;
+      gap: 1rem;
+  
   }
   
   @media (width < 435px) {
@@ -95,19 +85,17 @@ body {
       gap: 20px;
     }
     footer {
-      margin-top: 5rem;
-      left: 0;
-      bottom: 100px;
-      display: flex;
+      position: relative; /* ou position: fixed; */
+      bottom: 0;
       width: 100%;
-      height: 150px;
+      z-index: 1000;
+      margin-top: 5rem;
     }
     svg {
       position: absolute;
-      top: 105rem;
       left: 0;
       width: 100%;
-      height: 300px;
+      height: 120px;
       transform: scaleY(3) scaleX(2.25);
       transform-origin: bottom;
       box-sizing: border-box;
@@ -120,23 +108,6 @@ body {
       gap: 20px;
     }
   }
-  @media(width < 835px) {
-    footer {
-      margin-top: 25rem;
-      left: 0;
-      bottom: 1px;
-      display: flex;
-      width: 100%;
-      height: 150px;
-    }
-  }
-  @media(width < 1300px) {
-    footer {
-      margin-top: 24.2rem;
-      left: 0;
-      bottom: 1px;
-      display: flex;
-      width: 100%;
-      height: 150px;
-    }
-  }
+
+ 
+  

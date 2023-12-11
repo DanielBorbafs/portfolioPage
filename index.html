@@ -31,7 +31,7 @@
 
    <header>
       <nav class="navbar">
-        <img class="navbar-logo" src="./assets/logo.png" />
+        <img class="navbar-logo" src="./assets/logoempresa.svg" />
       </nav>
       <button class="navbar-burger" onclick="toggleMenu()"></button>
       <nav class="menu">
@@ -154,11 +154,171 @@
         </div>
       </div>
     </section>
+    <div class="descricao-sobre">
+      <div class="title">
+        <h1>Habilidades</h1>
+        <div class="sub-title">
+          <h2>Habilidades</h2>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>  
+    <section class="accordion mt--1"> 
+      <article>
+        <div>
+          <header onClick="toggleItem(this)">
+            <h2>What is HTML?</h2>
+            <span class="material-symbols-outlined">expand_more</span>
+          </header>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              quaerat atque eos, et recusandae quas voluptatem repellendus? Ullam,
+              expedita? Sapiente molestias tenetur illo ex libero consectetur.
+              Fugit labore similique temporibus.
+            </p>
+          </div>
+        </div>
+        <div>
+          <header onClick="toggleItem(this)">
+            <h2>What is CSS?</h2>
+            <span class="material-symbols-outlined">expand_more</span>
+          </header>
+          <div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              consequatur nisi, itaque, voluptas quos, alias molestiae odio
+              laboriosam incidunt rerum dicta dolorem minima repellat nostrum
+              vitae! Repellat obcaecati sint cum!
+            </p>
+          </div>
+        </div>
+        <div>
+          <header onClick="toggleItem(this)">
+            <h2>What is JavaScript?</h2>
+            <span class="material-symbols-outlined">expand_more</span>
+          </header>
+          <div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              consequatur nisi, itaque, voluptas quos, alias molestiae odio
+              laboriosam incidunt rerum dicta dolorem minima repellat nostrum
+              vitae! Repellat obcaecati sint cum!
+            </p>
+          </div>
+        </div>
+        <div>
+          <header onClick="toggleItem(this)">
+            <h2>What is ES6?</h2>
+            <span class="material-symbols-outlined">expand_more</span>
+          </header>
+          <div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              consequatur nisi, itaque, voluptas quos, alias molestiae odio
+              laboriosam incidunt rerum dicta dolorem minima repellat nostrum
+              vitae! Repellat obcaecati sint cum!
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
    
    </main>
-   
+   <footer>
+    <div class="background">
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="100%"
+        height="100%"
+        viewBox="0 0 1600 900"
+      >
+        <defs>
+          <linearGradient id="bg" x2="0%" y2="100%">
+            <stop
+              offset="0%"
+              style="stop-color: rgba(204, 53, 242, 0.6)"
+            ></stop>
+            <stop
+              offset="100%"
+              style="stop-color: rgba(38, 89, 190, 0.06)"
+            ></stop>
+          </linearGradient>
+          <path
+            id="wave"
+            fill="url(#bg)"
+            d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+          />
+        </defs>
+        <g>
+          <use xlink:href="#wave" opacity=".3">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="8s"
+              calcMode="spline"
+              values="270 230; -334 180; 270 230"
+              keyTimes="0; .5; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <use xlink:href="#wave" opacity=".6">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="6s"
+              calcMode="spline"
+              values="-270 230;243 220;-270 230"
+              keyTimes="0; .6; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <use xlink:href="#wave" opacty=".9">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="4s"
+              calcMode="spline"
+              values="0 230;-140 200;0 230"
+              keyTimes="0; .4; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+        </g>
+      </svg>
+    </div>
 
-   
+    <section>
+      <div class="social-media">
+        <ul class="socials">
+          <li><a class="fa-brands fa-facebook"></a></li>
+          <li><a class="fa-brands fa-twitter"></a></li>
+          <li><a class="fa-brands fa-linkedin"></a></li>
+          <li><a class="fa-brands fa-instagram"></a></li>
+        </ul>
+        <ul class="links">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Services</a></li>
+          <li><a>Team</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+        <p class="legal">© 2023 All rights reserved</p>
+      </section>
+      </div>
+   </footer>
+  
    <script src="js/script.js"></script>
   </body>
 </html>

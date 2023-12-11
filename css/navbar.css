@@ -9,9 +9,7 @@
     cursor: pointer;
     max-width: 100%;
   }
-  body{
-    background-color: rgb(180, 171, 171);
-  }
+
   
   
   .navbar,
@@ -47,7 +45,8 @@
   }
   
   .navbar-logo {
-    height: 25px;
+    margin-top: 10px;
+    height: 60px;
   }
   
   .navbar-burger {
@@ -96,7 +95,10 @@
     font-family: "Euclid Circular A";
     text-decoration: none;
   }
-  
+  .menu a:hover{
+   color: red;
+  }
+
   body.open .menu > a {
     animation: appear 0.3s both;
   }
@@ -104,6 +106,9 @@
   /* ********************** PROJETOS SECTION ******************/
   .mt--2 {
     margin-top: -5rem;
+  }
+  .mt--1 {
+    margin-top: 12px;
   }
   .conteiner {
     position: relative;
