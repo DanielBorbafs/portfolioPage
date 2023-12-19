@@ -352,7 +352,7 @@ article header ~ div {
   footer {
     position: relative; /* ou position: fixed; */
     bottom: 0;
-    width: 50%;
+    width: 100%;
     z-index: 1000;
     margin-top: 5rem;
   }
@@ -363,14 +363,12 @@ article header ~ div {
   }
 
   #media {
+
     align-items: center;
-    position: absolute;
-    top: 1rem;
-    
-    width: 1920px;
+  }
+ 
+  .background svg{
+    display: none;
   }
 
-  .background svg{
-    width: 100%;
-  }
 }
