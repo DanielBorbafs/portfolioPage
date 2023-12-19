@@ -3,7 +3,7 @@ body {
     background: rgb(17,9,23);
     font-family: "Euclid Circular A", "Poppins";
     color: #d6dfed;
-  }
+}
   
   html,
   body {
@@ -47,7 +47,7 @@ body {
    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 320px;
     height: 320px;
     transform: scaleY(3) scaleX(3);
     transform-origin: bottom;
@@ -76,7 +76,9 @@ body {
       gap: 1rem;
   
   }
-  
+  .background svg{
+    width: 265px;
+  }
   @media (width < 435px) {
     section {
       margin-top: 8rem;
@@ -108,6 +110,3 @@ body {
       gap: 20px;
     }
   }
-
- 
-  

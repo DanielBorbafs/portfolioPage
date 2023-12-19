@@ -31,6 +31,7 @@
 
    <header>
       <nav class="navbar">
+        teste
         <img class="navbar-logo" src="./assets/logoempresa.svg" />
       </nav>
       <button class="navbar-burger" onclick="toggleMenu()"></button>
@@ -43,7 +44,7 @@
    </header>
 
    <main class="container">
-    <section>
+    <section class="home">
       <div class="img-hero">
         <img src="imgs/hero1.png" alt="">
       </div>
@@ -61,109 +62,114 @@
             moldando minha abordagem de acordo com os princípios de <span>User Experience (UX) e User Interface (UI).</span>
           </p>
         </div>
-      </div>
-      <div class="btns">
-        <div class="button-borders">
-          <button class="primary-button"><i class="fa-solid fa-download"></i> Download CV
+        <div class="btns">
+          <div class="button-borders">
+            <button class="primary-button"><i class="fa-solid fa-download"></i> Download CV
+            </button>
+          </div>
+          <button class="button">
+            <span class="button-text">
+              <span> Contato </span>
+              <i class="fa-regular fa-message"></i>
+            </span>
+            <span class="button-links">
+              <a href="https://github.com/frontend-joe/react-sidebars">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a>
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </span>
           </button>
         </div>
-        <button class="button">
-          <span class="button-text">
-            <span> Contato </span>
-            <i class="fa-regular fa-message"></i>
-          </span>
-          <span class="button-links">
-            <a href="https://github.com/frontend-joe/react-sidebars">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a>
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </span>
-        </button>
       </div>
+     
     </section>
-    <div class="descricao-sobre">
-      <div class="title">
-        <h1>Projetos</h1>
-        <div class="sub-title">
-          <h2>Projetos</h2>
-          <div class="line"></div>
-        </div>
-      </div>
-    </div>  
+  
     <section class="projetos">
-
-      <div class="conteiner mt--2">
-        <div class="product-img">
+      <div class="descricao-sobre">
+        <div class="title">
+          <h1>Projetos</h1>
+          <div class="sub-title">
+            <h2>Projetos</h2>
+            <div class="line"></div>
+          </div>
         </div>
-        <div class="product-detail">
-        <span>texto qualquer</span>
+      </div>  
+      <div class="cards">
+        <div class="conteiner mt--2">
+          <div class="product-img">
+          </div>
+          <div class="product-detail">
+          <span>texto qualquer</span>
+          
+          <p>
+          lorem ipsum dolor sit amet
+          consectetur adipiscing elit
+          vivmus a commodo velit
+          </p>
+          <div class="buttons">
+         
+          <button class="btn cart">Visitar</button>
+          <button class="btn bookmark"><i class="fa-brands fa-github" aria-hidden="true"></i></button>
+          </div>
+          </div>
+        </div>
+  
+        <div class="conteiner">
+          <div class="product-img">
+          </div>
+          <div class="product-detail">
+          <span>texto qualquer</span>
+          
+          <p>
+          lorem ipsum dolor sit amet
+          consectetur adipiscing elit
+          vivmus a commodo velit
+          </p>
+          <div class="buttons">
+         
+          <button class="btn cart">Visitar</button>
+          <button class="btn bookmark"><i class="fa-brands fa-github" aria-hidden="true"></i></button>
+          </div>
+          </div>
+        </div>
         
-        <p>
-        lorem ipsum dolor sit amet
-        consectetur adipiscing elit
-        vivmus a commodo velit
-        </p>
-        <div class="buttons">
-       
-        <button class="btn cart">Visitar</button>
-        <button class="btn bookmark"><i class="fa-brands fa-github" aria-hidden="true"></i></button>
-        </div>
-        </div>
-      </div>
-
-      <div class="conteiner">
-        <div class="product-img">
-        </div>
-        <div class="product-detail">
-        <span>texto qualquer</span>
+        <div class="conteiner">
+          <div class="product-img">
+          </div>
+          <div class="product-detail">
+          <span>texto qualquer</span>
         
-        <p>
-        lorem ipsum dolor sit amet
-        consectetur adipiscing elit
-        vivmus a commodo velit
-        </p>
-        <div class="buttons">
-       
-        <button class="btn cart">Visitar</button>
-        <button class="btn bookmark"><i class="fa-brands fa-github" aria-hidden="true"></i></button>
-        </div>
-        </div>
-      </div>
-      
-      <div class="conteiner">
-        <div class="product-img">
-        </div>
-        <div class="product-detail">
-        <span>texto qualquer</span>
-      
-        <p>
-        lorem ipsum dolor sit amet
-        consectetur adipiscing elit
-        vivmus a commodo velit
-        </p>
-        <div class="buttons">
-       
-        <button class="btn cart">Visitar</button>
-        <button class="btn bookmark"><i class="fa-brands fa-github" aria-hidden="true"></i></button>
-        </div>
+          <p>
+          lorem ipsum dolor sit amet
+          consectetur adipiscing elit
+          vivmus a commodo velit
+          </p>
+          <div class="buttons">
+         
+          <button class="btn cart">Visitar</button>
+          <button class="btn bookmark"><i class="fa-brands fa-github" aria-hidden="true"></i></button>
+          </div>
+          </div>
         </div>
       </div>
     </section>
-    <div class="descricao-sobre">
-      <div class="title">
-        <h1>Habilidades</h1>
-        <div class="sub-title">
-          <h2>Habilidades</h2>
-          <div class="line"></div>
+
+    
+    <section class="accordion mt--1" id="skills"> 
+      <div class="descricao-sobre">
+        <div class="title">
+          <h1>Habilidades</h1>
+          <div class="sub-title">
+            <h2>Habilidades</h2>
+            <div class="line"></div>
+          </div>
         </div>
-      </div>
-    </div>  
-    <section class="accordion mt--1"> 
+      </div> 
       <article>
         <div>
           <header onClick="toggleItem(this)">
@@ -209,7 +215,7 @@
         </div>
         <div>
           <header onClick="toggleItem(this)">
-            <h2>What is ES6?</h2>
+            <h2>What is ES6? sssssssssssssssssssssssssss</h2>
             <span class="material-symbols-outlined">expand_more</span>
           </header>
           <div>
@@ -240,7 +246,7 @@
         <defs>
           <linearGradient id="bg" x2="0%" y2="100%">
             <stop
-              offset="0%"
+              offset="5%"
               style="stop-color: rgba(204, 53, 242, 0.6)"
             ></stop>
             <stop
@@ -299,24 +305,25 @@
       </svg>
     </div>
 
-    <section>
+    <section id="media">
       <div class="social-media">
-        <ul class="socials">
-          <li><a class="fa-brands fa-facebook"></a></li>
-          <li><a class="fa-brands fa-twitter"></a></li>
-          <li><a class="fa-brands fa-linkedin"></a></li>
-          <li><a class="fa-brands fa-instagram"></a></li>
-        </ul>
-        <ul class="links">
-          <li><a>Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Services</a></li>
-          <li><a>Team</a></li>
-          <li><a>Contact</a></li>
-        </ul>
-        <p class="legal">© 2023 All rights reserved</p>
-      </section>
+          <ul class="socials">
+            <li><a class="fa-brands fa-facebook"></a></li>
+            <li><a class="fa-brands fa-twitter"></a></li>
+            <li><a class="fa-brands fa-linkedin"></a></li>
+            <li><a class="fa-brands fa-instagram"></a></li>
+          </ul>
+          <ul class="links">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Services</a></li>
+            <li><a>Team</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+          <p class="legal">© 2023 All rights reserved</p>
       </div>
+    </section>
+ 
    </footer>
   
    <script src="js/script.js"></script>
