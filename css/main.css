@@ -335,17 +335,41 @@ article header ~ div {
     flex-direction: column;
   }
 
- 
   .descricao-texto {
     max-width: 50%;
   }
+
+  .projetos {
+    align-items: center;
+  }
+  .cards {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
   footer {
     position: relative; /* ou position: fixed; */
     bottom: 0;
-    width: 100%;
+    width: 50%;
     z-index: 1000;
     margin-top: 5rem;
   }
+  
+
+  #skills{
+    align-items: center;
+  }
+
+  #media {
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    
+    width: 1920px;
+  }
+
   .background svg{
     width: 100%;
   }
