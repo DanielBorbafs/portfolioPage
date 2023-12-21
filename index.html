@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dan</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
     rel="stylesheet"
@@ -31,8 +31,8 @@
           <button class="navbar-burger" onclick="toggleMenu()"></button>
           <nav class="menu">
             <a href="#" style="animation-delay: 0.1s">Inicio</a>
-            <a href="#" style="animation-delay: 0.2s">Skills</a>
-            <a href="#" style="animation-delay: 0.3s">Projetos</a>
+            <a href="#Projetos" style="animation-delay: 0.2s">Projetos</a>
+            <a href="#Habilidades" style="animation-delay: 0.3s">Habilidades</a>
         </nav>
         
     </header>
@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="projects-section container">
-            <div class="title"><h1>Projetos</h1></div>
+            <div class="title" id="Projetos"><h1>Projetos</h1></div>
             <div class="cards">
                 <div class="content-card">
                   <div class="product-img">
@@ -97,15 +97,14 @@
                   </div>
                 </div>
                 <div class="content-card">
-                    <div class="product-img">
+                    <div class="product-img2">
                     </div>
                     <div class="product-detail">
-                      <h2>Texto qualquer</h2>
+                      <h2>CodeTriad</h2>
                     
                     <p>
-                    lorem ipsum dolor sit amet
-                    consectetur adipiscing elit
-                    vivmus a commodo velit
+                      Site da startup que faço parte,
+                      desenvolvi o layout no figma e codei em html, css e Javascript!
                     </p>
                     <div class="buttons">
                    
@@ -163,7 +162,7 @@
         <div class="skills-container">
             <div class="accordion mt--1" id="skills"> 
                 <div class="descricao-sobre">
-                  <div class="title">
+                  <div class="title" id="Habilidades">
                     <h1>Habilidades</h1>
                 </div>
                 </div> 
@@ -231,6 +230,6 @@
         </section>
     </footer>
     </main>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
