@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/navbar.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+
+   <header>
+      <nav class="navbar">
+        teste
+        <img class="navbar-logo" src="./assets/logoempresa.svg" />
+      </nav>
+      <button class="navbar-burger" onclick="toggleMenu()"></button>
+      <nav class="menu">
+        <a href="#" style="animation-delay: 0.1s">Inicio</a>
+        <a href="#" style="animation-delay: 0.2s">Skills</a>
+        <a href="#" style="animation-delay: 0.3s">Projetos</a>
+        <a href="#" style="animation-delay: 0.4s">Contato</a>
+      </nav>
+   </header>
+
+   <main class="container">
+    <section class="home">
+      <div class="img-hero">
+        <img src="imgs/hero1.png" alt="">
+      </div>
+      <div class="descricao-sobre">
+        <div class="title">
+          <h1>Sobre Mim</h1>
+          <div class="sub-title">
+            <h2>Sobre Mim</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="descricao-texto">
+          <p> Sou um profissional apaixonado por tecnologia, com habilidades abrangentes tanto no <span>front-end</span> quanto no <span>back-end</span> do desenvolvimento de software.
+            Minha experiência abrange não apenas a implementação técnica, mas também uma profunda compreensão das necessidades do usuário, 
+            moldando minha abordagem de acordo com os princípios de <span>User Experience (UX) e User Interface (UI).</span>
+          </p>
+        </div>
+        <div class="btns">
+          <div class="button-borders">
+            <button class="primary-button"><i class="fa-solid fa-download"></i> Download CV
+            </button>
+          </div>
+          <button class="button">
+            <span class="button-text">
+              <span> Contato </span>
+              <i class="fa-regular fa-message"></i>
+            </span>
+            <span class="button-links">
+              <a href="https://github.com/frontend-joe/react-sidebars">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a>
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </span>
+          </button>
+        </div>
+      </div>
+     
+    </section>
+  
+    <section class="projetos">
+      <div class="descricao-sobre">
+        <div class="title">
+          <h1>Projetos</h1>
+          <div class="sub-title">
+            <h2>Projetos</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>  
+      <div class="cards">
+        <div class="conteiner">
+          <div class="product-img">
+          </div>
+          <div class="product-detail">
+          <span>texto qualquer</span>
+          
+          <p>
+          lorem ipsum dolor sit amet
+          consectetur adipiscing elit
+          vivmus a commodo velit
+          </p>
+          <div class="buttons">
+         
+          <button class="btn cart">Visitar</button>
+          <button class="btn bookmark"><i class="fa-brands fa-github" aria-hidden="true"></i></button>
+          </div>
+          </div>
+        </div>
+  
+        <div class="conteiner">
+          <div class="product-img">
+          </div>
+          <div class="product-detail">
+          <span>texto qualquer</span>
+          
+          <p>
+          lorem ipsum dolor sit amet
+          consectetur adipiscing elit
+          vivmus a commodo velit
+          </p>
+          <div class="buttons">
+         
+          <button class="btn cart">Visitar</button>
+          <button class="btn bookmark"><i class="fa-brands fa-github" aria-hidden="true"></i></button>
+          </div>
+          </div>
+        </div>
+        
+        <div class="conteiner">
+          <div class="product-img">
+          </div>
+          <div class="product-detail">
+          <span>texto qualquer</span>
+        
+          <p>
+          lorem ipsum dolor sit amet
+          consectetur adipiscing elit
+          vivmus a commodo velit
+          </p>
+          <div class="buttons">
+         
+          <button class="btn cart">Visitar</button>
+          <button class="btn bookmark"><i class="fa-brands fa-github" aria-hidden="true"></i></button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="accordion mt--1" id="skills"> 
+      <div class="descricao-sobre">
+        <div class="title">
+          <h1>Habilidades</h1>
+          <div class="sub-title">
+            <h2>Habilidades</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div> 
+      <article>
+        <div>
+          <header onClick="toggleItem(this)">
+            <h2>What is HTML?</h2>
+            <span class="material-symbols-outlined">expand_more</span>
+          </header>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              quaerat atque eos, et recusandae quas voluptatem repellendus? Ullam,
+              expedita? Sapiente molestias tenetur illo ex libero consectetur.
+              Fugit labore similique temporibus.
+            </p>
+          </div>
+        </div>
+        <div>
+          <header onClick="toggleItem(this)">
+            <h2>What is CSS?</h2>
+            <span class="material-symbols-outlined">expand_more</span>
+          </header>
+          <div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              consequatur nisi, itaque, voluptas quos, alias molestiae odio
+              laboriosam incidunt rerum dicta dolorem minima repellat nostrum
+              vitae! Repellat obcaecati sint cum!
+            </p>
+          </div>
+        </div>
+        <div>
+          <header onClick="toggleItem(this)">
+            <h2>What is JavaScript?</h2>
+            <span class="material-symbols-outlined">expand_more</span>
+          </header>
+          <div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              consequatur nisi, itaque, voluptas quos, alias molestiae odio
+              laboriosam incidunt rerum dicta dolorem minima repellat nostrum
+              vitae! Repellat obcaecati sint cum!
+            </p>
+          </div>
+        </div>
+        <div>
+          <header onClick="toggleItem(this)">
+            <h2>What is ES6? sssssssssssssssssssssssssss</h2>
+            <span class="material-symbols-outlined">expand_more</span>
+          </header>
+          <div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              consequatur nisi, itaque, voluptas quos, alias molestiae odio
+              laboriosam incidunt rerum dicta dolorem minima repellat nostrum
+              vitae! Repellat obcaecati sint cum!
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+   
+   </main>
+   <footer>
+    <div class="background">
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="100%"
+        height="100%"
+        viewBox="0 0 1600 900"
+      >
+        <defs>
+          <linearGradient id="bg" x2="0%" y2="100%">
+            <stop
+              offset="5%"
+              style="stop-color: rgba(204, 53, 242, 0.6)"
+            ></stop>
+            <stop
+              offset="100%"
+              style="stop-color: rgba(38, 89, 190, 0.06)"
+            ></stop>
+          </linearGradient>
+          <path
+            id="wave"
+            fill="url(#bg)"
+            d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
+          />
+        </defs>
+        <g>
+          <use xlink:href="#wave" opacity=".3">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="8s"
+              calcMode="spline"
+              values="270 230; -334 180; 270 230"
+              keyTimes="0; .5; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <use xlink:href="#wave" opacity=".6">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="6s"
+              calcMode="spline"
+              values="-270 230;243 220;-270 230"
+              keyTimes="0; .6; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+          <use xlink:href="#wave" opacty=".9">
+            <animateTransform
+              attributeName="transform"
+              attributeType="XML"
+              type="translate"
+              dur="4s"
+              calcMode="spline"
+              values="0 230;-140 200;0 230"
+              keyTimes="0; .4; 1"
+              keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+              repeatCount="indefinite"
+            />
+          </use>
+        </g>
+      </svg>
+    </div>
+
+    <section id="media">
+      <div class="social-media">
+          <ul class="socials">
+            <li><a class="fa-brands fa-facebook"></a></li>
+            <li><a class="fa-brands fa-twitter"></a></li>
+            <li><a class="fa-brands fa-linkedin"></a></li>
+            <li><a class="fa-brands fa-instagram"></a></li>
+          </ul>
+          <ul class="links">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Services</a></li>
+            <li><a>Team</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+          <p class="legal">© 2023 All rights reserved</p>
+      </div>
+    </section>
+    <div class="svg-footer"></div>
+   </footer>
+  
+   <script src="js/script.js"></script>
+  </body>
+</html>
