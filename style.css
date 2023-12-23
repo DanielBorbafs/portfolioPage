@@ -203,16 +203,16 @@ img{
     width: 300px;
     height: 420px;
     box-shadow: 0 10px 15px rgba(181, 5, 204, 0.192);
-    background: #ffffff;
-    
+    background: #18192D;
     }
     
     .product-img {
-    width: 300px;
-    height: 230px;
-    background: url("/imgs/teste.png") 0 -200px / cover;
+      width: 300px;
+      height: 230px;
+      background: url("/imgs/bg1.svg") 0 0 no-repeat;
+      background-size: cover;
+  }
   
-    }
     
     .product-img2 {
       width: 300px;
@@ -220,6 +220,16 @@ img{
       background: url("/imgs/projeto.png") 0 -1px / cover;
      
     }
+
+    .product-img3 {
+      width: 300px;
+      height: 230px;
+      background: url("/imgs/bg5.svg") 0 -1px / cover;
+     
+    }
+
+
+
     .product-detail {
     width: 300px;
     height: 190px;
