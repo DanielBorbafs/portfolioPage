@@ -25,8 +25,8 @@
 <body>
     <header>
         <nav class="navbar">
-            teste
-            <img class="navbar-logo" src="./assets/logoempresa.svg" />
+
+            <img class="navbar-logo" src="./imgs/logo.png" />
           </nav>
           <button class="navbar-burger" onclick="toggleMenu()"></button>
           <nav class="menu">
@@ -39,7 +39,7 @@
     <main>
         <div class="first-section container">
             <div class="perfil-img">
-                <img src="/imgs/hero1.png" alt="">
+                <img src="./imgs/hero1.png" alt="">
             </div>
             <div class="text-about">
                 <h1 class="title">Sobre</h1>
@@ -50,8 +50,10 @@
                 </p>
                 <div class="btns-about">
                     <div class="button-borders">
-                        <button class="primary-button"><i class="fa-solid fa-download"></i> Download CV
-                        </button>
+                        <a href="DanielBorba.pdf" download="DanielBorba.pdf">
+                          <button class="primary-button"><i class="fa-solid fa-download"></i> Download CV
+                          </button>
+                        </a>
                       </div>
                       <button class="button">
                         <span class="button-text">
@@ -106,9 +108,11 @@
                     </p>
                     <div class="buttons">
                    
-                      <button class="btn cart">Visitar</button>
+                      <a href="https://codetriad.net" target="_blank"><button class="btn cart">Visitar</button></a>
                       <button class="btn bookmark"><i class="fa-brands fa-github" aria-hidden="true"></i></button>
-                      <button class="btn bookmark"><i class="fa-brands fa-behance" aria-hidden="true"></i></button>
+                      <a href="https://www.behance.net/gallery/187361111/Codetriad-Landing-Page" target="_blank"><button class="btn bookmark"><i class="fa-brands fa-behance" aria-hidden="true"></i></button></a>
+
+                      
                     </div>
                     </div>
                   </div>
